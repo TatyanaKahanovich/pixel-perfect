@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/bebas___-webfont.woff2') format('woff2'),
+       url('../fonts/bebas___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'St Marie';
+  src: url('../fonts/stmarie-thin-webfont.woff2') format('woff2'),
+       url('../fonts/stmarie-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font: 15px 'Calibri regular', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.content {
+  min-height: calc(100vh - 200px);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  height: 130px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+}
+.logo {
+  margin-top: 5px;
+  margin-left: 16px;
+  float: left;
+}
+
+h1 {
+  margin-top: 0px;
+  padding: 12px 0 0 160px;
+  font-size: 37px;
+  letter-spacing: 2px;
+  color: #fb9c06;
+}
+
+h1 span {
+  display: block;
+  font: 37px 'Bebas', Arial, sans-serif;
+  font-weight: 600;
+  margin-left: -5px;
+  color: #6e6d6b;
+}
+
+nav {
+  font: 22px 'Calibri regular', Arial, sans-serif;
+  float: right;
+  position: relative;
+  bottom: 78px;
+}
+
+nav a{
+  color: #9e9b9b;
+}
+
+nav a:hover {
+  color: #fb9c06;
+}
+
+ul li {
+  display: inline;
+  padding-left: 74px;
+}
+
+.home, .about, .work, .blog, .contact {
+  position: relative;
+}
+
+.about {
+  margin-left: 2px;
+  right: 8px;
+}
+
+.work {
+  right: 16px;
+}
+
+.blog {
+  right: 15px;
+}
+
+.contact {
+  right: 7px;
+}
+
+.home:before {
+  content: '';
+  background: url(../images/icons.png) no-repeat 0 0;
+  width: 55px;
+  height: 47px;
+  position: absolute;
+  bottom: 38px;
+}
+
+.home:hover:before {
+  background: url(../images/icons.png) no-repeat  0 -58px;
+}
+
+.about:before {
+  content: '';
+  background: url(../images/icons.png) no-repeat -75px -2px;
+  width: 23px;
+  height: 44px;
+  position: absolute;
+  bottom: 37px;
+  left: 18px;
+}
+
+.about:hover:before {
+  background: url(../images/icons.png) no-repeat -75px -60px;
+}
+
+.work:before {
+  content: '';
+  background: url(../images/icons.png) no-repeat -124px -2px;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  bottom: 34px;
+  right: 3px;
+}
+
+.work:hover:before {
+  background: url(../images/icons.png) no-repeat -124px -60px;
+}
+
+.blog:before {
+  content: '';
+  background: url(../images/icons.png) no-repeat -185px -4px;
+  width: 41px;
+  height: 40px;
+  position: absolute;
+  bottom: 37px;
+  right: -3px;
+}
+
+.blog:hover:before {
+  background: url(../images/icons.png) no-repeat -185px -61px;
+}
+
+.contact:before {
+  content: '';
+  background: url(../images/icons.png) no-repeat  -239px -7px;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  bottom: 37px;
+  left: 12px;
+}
+
+.contact:hover:before {
+  background: url(../images/icons.png) no-repeat -239px -65px;
+}
+
+.slider {
+  background-image:  url(../images/orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  border-top: 3px solid #fcba50;
+  border-bottom: 4px solid #fcba50;
+  margin-top: 130px;
+  left: 0;
+  top: 0;
+}
+
+.slider h2:first-child {
+  color: #fb9c06;
+  background-color: rgba(0, 0, 0, 0.69);
+  width: 353px;
+  float:left;
+  font: 37px 'Bebas', Arial, sans-serif;
+  letter-spacing: .6px;
+  margin: 129px 0 0 20px;
+  padding: 7px 0px 7px 29px;
+}
+
+.slider h2:last-child {
+  color: #6e6d6b;
+  background-color: rgba(255, 175, 18, 0.7);
+  width: 364px;
+  clear: left;
+  float:left;
+  font: 37px 'Bebas', Arial, sans-serif;
+  letter-spacing: .6px;
+  padding: 8px 0px 15px 32px;
+  margin-left: 9px;
+}
+.advantages article {
+  float: left;
+  width: 25%;
+}
+
+.advantages article p {
+  font: 15px 'Calibri regular',  Arial, sans-serif;
+  margin: 28px 20px 5px 20px;;
+  line-height: 23.34px;
+  letter-spacing: 0.3px;
+  max-height: 134px;
+  overflow: hidden;
+}
+
+.advantages-link {
+  float: right;
+  color: #ffac00;
+  font: 16px 'Calibri Light', Arial, sans-serif;
+  font-style: italic;
+  padding-right: 23px;
+}
+
+.line-shadow {
+  box-shadow: inset 0 4px 5px -3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 4px;
+  clear: both;
+  margin-top: 216px;
+}
+
+h3 {
+  font: 40px 'St Marie', Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: #ff9c00;
+  margin: 26px 0 0 20px;
+  line-height: 23.34px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  color: #ff9c00;
+  font: 22px 'Calibri Light', Arial, sans-serif;
+  padding-top: 15px;
+  padding-left: 16px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+h4 span {
+  color: #6e6d6b;
+  padding-left: 3px;
+}
+
+figure {
+  width: 300px;
+  float: left;
+  margin-left: -6px;
+  margin-top: 5px;
+}
+
+figure img {
+  border: 9px solid #ffb540;
+  border-radius: 50%;
+}
+
+.team-nibs {
+  margin-left: 128px;
+}
+
+.team-nibs h4 {
+  margin-left: -30px;
+}
+
+.team-squawk {
+  margin-left: 58px;
+  position: relative;
+  left: 34px;
+}
+
+.team-squawk h4 {
+  padding-left: 31px;
+}
+
+figcaption {
+  margin-top: 18px;
+  line-height: 23.16px;
+  width: 270px;
+  margin-left: 38px;
+  letter-spacing: .3px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.feedback h3 {
+  clear: both;
+  padding: 40px 0 80px 14px;
+}
+
+form label {
+  width: 75px;
+  clear: left;
+  color: #fb9c06;
+  font: 24px 'St Marie', Arial, sans-serif;
+  float: left;
+  padding: 0px 47px 41px 0px;
+}
+
+input, textarea {
+  width: 1054px;
+  background-color: rgb(247, 246, 245);
+  opacity: 0.922;
+  box-shadow: inset 5px 5px 0px 0px rgba(198, 197, 197, 0.75);
+  border: 0;
+}
+
+input {
+  margin: 0px 0px 41px 10px;
+  padding: 7px;
+}
+
+textarea {
+  padding: 0 5px;
+  margin-left: 10px;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: rgb(198, 197, 197) auto 5px;
+  box-shadow: none;
+}
+
+button {
+  float: right;
+  margin-right: 37px;
+  margin-top: 24px;
+  padding: 5px 37px 3px 34px;
+  color: white;
+  background-color: #fb9c06;
+  font: 30px 'St Marie', Arial, sans-serif;
+  border: 0;
+  border-bottom: 4px solid rgb(204, 131, 15);
+}
+
+button:hover {
+  background-color: #fbb547;
+  border: 1px solid #866f4a;
+  box-shadow: 1px 1px 2px #9b630a;
+  transition: all 150ms linear;
+  border-radius: 2px;
+}
+
+footer {
+  color: white;
+  text-transform: uppercase;
+  background-color: #fb9c06;
+  font: 33px 'St Marie', Arial, sans-serif;
+  clear: both;
+  text-align: center;
+  margin-top: 121px;
+  padding: 15px 0 19px 0;
+  box-shadow: inset 0px 0px 5px 0px rgb(204, 131, 15);
+  border-bottom: 4px solid rgb(204, 131, 15);
+  letter-spacing: 0.02em;
+}
